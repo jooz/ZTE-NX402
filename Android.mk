@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(TARGET_DEVICE),nx402)
-    include $(call all-named-subdir-makefiles, recovery libaudio libril libcamera libgralloc libcopybit libsensors liblights)
-endif
+#ifeq ($(TARGET_DEVICE),nx402)
+#    include $(call all-named-subdir-makefiles, recovery libaudio libril libcamera libgralloc libcopybit libsensors liblights)
+#endif
 
 # Hack for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
