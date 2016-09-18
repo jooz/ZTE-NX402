@@ -89,23 +89,23 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
 # Ramdisk
-PRODUCT_PACKAGES += \
-    init.crda.sh \
-    init.qcom.bt.sh \
-    init.qcom.coex.sh \
-    init.qcom.fm.sh
+#PRODUCT_PACKAGES += \
+#    init.crda.sh \
+#    init.qcom.bt.sh \
+#    init.qcom.coex.sh \
+#    init.qcom.fm.sh
 
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.qcom.rc \
-    init.qcom.power.rc \
-    init.qcom.usb.rc \
-    init.recovery.qcom.rc \
-    ueventd.qcom.rc \
-    tp_node.sh
+#PRODUCT_PACKAGES += \
+#    fstab.qcom \
+#    init.qcom.rc \
+#    init.qcom.power.rc \
+#    init.qcom.usb.rc \
+#    init.recovery.qcom.rc \
+#    ueventd.qcom.rc \
+#    tp_node.sh
 
 # we have enough storage space to hold precise GC data
-PRODUCT_TAGS += dalvik.gc.type-precise
+#PRODUCT_TAGS += dalvik.gc.type-precise
 
 
 
