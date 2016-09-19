@@ -3,11 +3,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/ZTE/NX402/NX402-vendor.mk)
+$(call inherit-product-if-exists, vendor/zte/nx402/nx402-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/ZTE/NX402/overlay
+DEVICE_PACKAGE_OVERLAYS += device/zte/nx402/overlay
 
-LOCAL_PATH := device/ZTE/NX402
+LOCAL_PATH := device/zte/nx402
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -20,8 +20,8 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_NX402
-PRODUCT_DEVICE := NX402
+PRODUCT_NAME := full_nx402
+PRODUCT_DEVICE := nx402
 
 
 
@@ -85,8 +85,8 @@ PRODUCT_COPY_FILES += \
 
 # GSM APN list
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
-    vendor/cm/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
+    vendor/cm/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+#    vendor/cm/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
 # Ramdisk
 #PRODUCT_PACKAGES += \
@@ -107,6 +107,19 @@ PRODUCT_COPY_FILES += \
 # we have enough storage space to hold precise GC data
 #PRODUCT_TAGS += dalvik.gc.type-precise
 
-
-
-
+# Copy over Init/Base files
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ramdisk/init.environ.rc:root/init.environ.rc \
+    $(LOCAL_PATH)/ramdisk/init.nubia.usb.rc:root/init.nubia.usb.rc \
+    $(LOCAL_PATH)/ramdisk/init.nx402.rc:root/init.nx402.rc \
+    $(LOCAL_PATH)/ramdisk/init.project.rc:root/init.project.rc \
+    $(LOCAL_PATH)/ramdisk/init.project.rc:root/init.project.rc \
+    $(LOCAL_PATH)/ramdisk/init.qcom.rc:root/init.qcom.rc \
+    $(LOCAL_PATH)/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    $(LOCAL_PATH)/ramdisk/init.rc:root/init.rc \
+    $(LOCAL_PATH)/ramdisk/init.rom.rc:root/init.rom.rc \
+    $(LOCAL_PATH)/ramdisk/init.usb.rc:root/init.usb.rc \
+    $(LOCAL_PATH)/ramdisk/recovery.rc:root/recovery.rc \
+    $(LOCAL_PATH)/ramdisk/ueventd.qcom.rc:root/ueventd.qcom.rc \
+    $(LOCAL_PATH)/ramdisk/ueventd.rc:root/ueventd.rc \
+    $(LOCAL_PATH)/ramdisk/fstab.nx402:root/fstab.nx402

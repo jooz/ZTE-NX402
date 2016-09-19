@@ -1,0 +1,17 @@
+# fstab file for NX402
+# NOTE: Removed some stuff because of init.rc
+#
+# device	mount point	fstype
+#
+/dev/block/platform/msm_sdcc.1/by-name/misc           /misc         emmc
+/dev/block/platform/msm_sdcc.1/by-name/recovery       /recovery     emmc
+/dev/block/platform/msm_sdcc.1/by-name/boot           /boot         emmc
+/dev/block/platform/msm_sdcc.1/by-name/system         /system       ext4    ro,barrier=1 wait
+/dev/block/platform/msm_sdcc.1/by-name/userdata       /data         ext4    nosuid,nodev,barrier=1,noauto_da_alloc      wait,check,encryptable=footer
+/dev/block/platform/msm_sdcc.1/by-name/grow           /emmc         vfat
+/dev/block/mmcblk1p1                                  /sdcard       vfat
+#
+#Got from stock fstab
+/devices/platform/msm_sdcc.1/mmc_host                 auto        	vfat    defaults                                    voldmanaged=sdcard0:25,noemulatedsd
+/devices/platform/msm_sdcc.3/mmc_host                 auto        	vfat    defaults                                    voldmanaged=sdcard1:auto
+/devices/platform/msm_hsusb_host                      auto        	vfat    defaults                                    voldmanaged=usba:auto
