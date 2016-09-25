@@ -1,34 +1,34 @@
-bin/qmuxd
-bin/hci_qcomm_init
+system/bin/qmuxd
+system/bin/hci_qcomm_init
 
 # bluetooth
-etc/init.qcom.bt.sh
+system/etc/init.qcom.bt.sh
 
 # EGL
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/libgsl.so
+system/vendor/lib/egl/libEGL_adreno.so
+system/vendor/lib/egl/libGLESv2_adreno.so
+system/vendor/lib/egl/libGLESv1_CM_adreno.so
+system/vendor/lib/egl/libq3dtools_adreno.so
+system/vendor/lib/libgsl.so
 
 #RIL files
-lib/libril-qc-qmi-1.so
-lib/libril-qcril-hook-oem.so
-vendor/lib/libdiag.so
-lib/libqmi.so
-lib/libnfc.so
-lib/libdss.so
+system/lib/libril-qc-qmi-1.so
+system/lib/libril-qcril-hook-oem.so
+system/vendor/lib/libdiag.so
+system/lib/libqmi.so
+system/lib/libnfc.so
+system/lib/libdss.so
 
 #camera
-lib/liboemcamera.so
-lib/libmmjpeg.so
-lib/libmmipl.so
+system/lib/liboemcamera.so
+system/lib/libmmjpeg.so
+system/lib/libmmipl.so
 
 #OMX
-lib/libOmxEvrcEnc.so
-lib/libOmxAacDec.so
-lib/libOmxAmrEnc.so
-lib/libOmxEvrcDec.so
-lib/libOmxWmaDec.so
-lib/libOmxQcelp13Enc.so
-lib/libOmxAacEnc.so
+system/lib/libOmxEvrcEnc.so
+system/lib/libOmxAacDec.so
+system/lib/libOmxAmrEnc.so
+system/lib/libOmxEvrcDec.so
+system/lib/libOmxWmaDec.so
+system/lib/libOmxQcelp13Enc.so
+system/lib/libOmxAacEnc.so

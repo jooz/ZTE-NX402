@@ -46,7 +46,7 @@ done
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_COPY_FILES := \\
+PRODUCT_COPY_FILES += \\
 EOF
 
 LINEEND=" \\"
