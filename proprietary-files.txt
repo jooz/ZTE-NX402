@@ -76,6 +76,10 @@ system/lib/libOmxAmrwbplusDec.so
 system/lib/libOmxEvrcDec.so
 system/lib/libOmxQcelp13Dec.so
 system/lib/libOmxWmaDec.so
+system/lib/libOmxQcelp13Enc.so
+system/lib/libOmxEvrcEnc.so
+system/lib/libOmxAmrEnc.so
+system/lib/libOmxAacEnc.so
 
 # Qualcomm framework
 system/lib/libdsi_netctrl.so
@@ -157,7 +161,7 @@ system/etc/libnfc-nxp.conf
 system/lib/hw/nfc.default.so
 system/vendor/firmware/libpn544_fw_C3_1_39.so
 system/vendor/firmware/libpn544_fw.so
-
+system/lib/libnfc.so
 system/lib/libQSEEComAPI.so
 system/lib/libconfigdb.so
 system/lib/libchromatix_imx074_default_video.so
@@ -245,6 +249,9 @@ system/lib/libtime_genoff.so
 
 system/lib/hw/camera.msm8960.so
 
+# bluetooth
+ -system/etc/init.qcom.bt.sh
+ 
 #FM
 system/bin/fm_qsoc_patches
 
