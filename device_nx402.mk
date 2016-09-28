@@ -123,3 +123,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/ueventd.qcom.rc:root/ueventd.qcom.rc \
     $(LOCAL_PATH)/ramdisk/ueventd.rc:root/ueventd.rc \
     $(LOCAL_PATH)/ramdisk/fstab.nx402:root/fstab.nx402
+
+# Insecure ADBD
+# (ro.adb.secure=3)
+ADDITIONAL_DEFAULT_PROPERTIES += \
+	ro.adb.secure=0 \
+persist.service.adb.enable=1
+
