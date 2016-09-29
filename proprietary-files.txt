@@ -76,10 +76,6 @@ system/lib/libOmxAmrwbplusDec.so
 system/lib/libOmxEvrcDec.so
 system/lib/libOmxQcelp13Dec.so
 system/lib/libOmxWmaDec.so
-system/lib/libOmxQcelp13Enc.so
-system/lib/libOmxEvrcEnc.so
-system/lib/libOmxAmrEnc.so
-system/lib/libOmxAacEnc.so
 
 # Qualcomm framework
 system/lib/libdsi_netctrl.so
@@ -106,11 +102,7 @@ system/bin/netmgrd
 system/bin/qcks
 system/bin/qmiproxy
 system/bin/qmuxd
-system/bin/rild
 system/bin/rmt_storage
-system/lib/libril.so
-system/lib/librilutils.so
-system/lib/libreference-ril.so
 system/lib/libril-qc-qmi-1.so
 system/lib/libril-qcril-hook-oem.so
 
@@ -158,10 +150,8 @@ system/etc/firmware/startup_fw_update.img
 # nfc
 system/etc/libnfc-brcm.conf
 system/etc/libnfc-nxp.conf
-system/lib/hw/nfc.default.so
 system/vendor/firmware/libpn544_fw_C3_1_39.so
 system/vendor/firmware/libpn544_fw.so
-system/lib/libnfc.so
 system/lib/libQSEEComAPI.so
 system/lib/libconfigdb.so
 system/lib/libchromatix_imx074_default_video.so
@@ -208,7 +198,6 @@ system/lib/libchromatix_s5k3l1yx_zsl.so
 system/lib/libchromatix_s5k4e1_default_video.so
 system/lib/libchromatix_s5k4e1_preview.so
 system/lib/libcneapiclient.so
-system/lib/libcnefeatureconfig.so
 system/lib/libcneqmiutils.so
 system/lib/libcneutils.so
 system/lib/libCommandSvc.so
@@ -250,13 +239,10 @@ system/lib/libtime_genoff.so
 system/lib/hw/camera.msm8960.so
 
 # bluetooth
- -system/etc/init.qcom.bt.sh
+system/etc/init.qcom.bt.sh
  
 #FM
 system/bin/fm_qsoc_patches
 
 #Video call
 system/vendor/lib/lib-imsvt.so
-
-#Wcnss
-system/bin/wcnss_service
